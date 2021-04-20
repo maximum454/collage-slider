@@ -2,7 +2,7 @@
 * https://unilook-collection.ru/
 
 #Пример
-https://maximum454.github.io/collage-slider/build/
+* https://maximum454.github.io/collage-slider/build/
 
 ####Верстка использует сборку Gulp  
  **Старт:** ***gulp***  
