@@ -34,9 +34,6 @@ $(function () {
             slidesToScroll: 1,
             adaptiveHeight: true,
         });
-        $('.js-collage-slider').on('afterChange', function(event, slick, currentSlide, nextSlide){
-            sliderCollage();
-        });
     })
 
 })
