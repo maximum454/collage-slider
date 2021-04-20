@@ -20,6 +20,7 @@
 		flex-shrink: 0;
 		&:hover{
 			transform: scale(1.1);
+			z-index: 10!important;
 		}
 		&:first-child{
 			margin-left: 0;
@@ -46,7 +47,6 @@
 	.swiper-button-prev{
 		left: 0;
 		top: 40px;
-		transform: translate(0,0) rotate(180deg);
 	}
 	.swiper-button-next {
 		right: 0;
@@ -55,13 +55,9 @@
 	}
 	.swiper-button-next:after,
 	.swiper-button-prev:after {
-		content: '';
 		width: 27px;
 		height: 48px;
-		background-image: url("../img/arrow-right.svg");
-		background-repeat: no-repeat;
-		background-position: center;
-		background-size: 100%;
+		color: #4a4a4a;
 	}
 	@include r(1023){
 		.swiper-slide{

@@ -2482,6 +2482,7 @@ button.swiper-pagination-bullet {
   -webkit-transform: scale(1.1);
       -ms-transform: scale(1.1);
           transform: scale(1.1);
+  z-index: 10 !important;
 }
 
 .collage__img:first-child {
@@ -2507,9 +2508,6 @@ button.swiper-pagination-bullet {
 .collage .swiper-button-prev {
   left: 0;
   top: 40px;
-  -webkit-transform: translate(0, 0) rotate(180deg);
-      -ms-transform: translate(0, 0) rotate(180deg);
-          transform: translate(0, 0) rotate(180deg);
 }
 
 .collage .swiper-button-next {
@@ -2520,13 +2518,9 @@ button.swiper-pagination-bullet {
 
 .collage .swiper-button-next:after,
 .collage .swiper-button-prev:after {
-  content: '';
   width: 27px;
   height: 48px;
-  background-image: url("../img/arrow-right.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100%;
+  color: #4a4a4a;
 }
 
 @media only screen and (max-width: 1023px) {
