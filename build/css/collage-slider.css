@@ -1685,6 +1685,7 @@ body.compensate-for-scrollbar {
       -ms-flex-pack: justify;
           justify-content: space-between;
   position: relative;
+  margin: 0 10px;
 }
 
 .collage__img {
@@ -1694,9 +1695,9 @@ body.compensate-for-scrollbar {
   -webkit-box-shadow: 0 0 4px 2px rgba(74, 74, 74, 0.6);
           box-shadow: 0 0 4px 2px rgba(74, 74, 74, 0.6);
   display: block;
-  -webkit-transition: .4s;
-  -o-transition: .4s;
-  transition: .4s;
+  -webkit-transition: all .4s ease;
+  -o-transition: all .4s ease;
+  transition: all .4s ease;
   -webkit-transform: scale(1);
       -ms-transform: scale(1);
           transform: scale(1);
@@ -1738,6 +1739,45 @@ body.compensate-for-scrollbar {
 .collage__img.w4 {
   width: 140px;
   height: 140px;
+}
+
+.collage .slick-list {
+  padding: 20px 0;
+}
+
+.collage .slick-next,
+.collage .slick-prev {
+  position: absolute;
+  display: block;
+  width: 25px;
+  height: 45px;
+  background-image: url("../img/arrow-right.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  top: 0;
+  -webkit-transform: translate(0, 0) rotate(0);
+      -ms-transform: translate(0, 0) rotate(0);
+          transform: translate(0, 0) rotate(0);
+  z-index: 100;
+}
+
+.collage .slick-next:before,
+.collage .slick-prev:before {
+  display: none;
+}
+
+.collage .slick-prev {
+  left: 0;
+  -webkit-transform: translate(0, 0) rotate(180deg);
+      -ms-transform: translate(0, 0) rotate(180deg);
+          transform: translate(0, 0) rotate(180deg);
+}
+
+.collage .slick-next {
+  right: 0;
+  top: auto;
+  bottom: 0;
 }
 
 @media all and (max-width: 576px) {
