@@ -2465,8 +2465,8 @@ button.swiper-pagination-bullet {
 .collage__img {
   position: relative;
   cursor: pointer;
-  -webkit-box-shadow: 0 0 15px 4px rgba(153, 153, 153, 0.6);
-          box-shadow: 0 0 15px 4px rgba(153, 153, 153, 0.6);
+  -webkit-box-shadow: 0 0 4px 2px rgba(153, 153, 153, 0.6);
+          box-shadow: 0 0 4px 2px rgba(153, 153, 153, 0.6);
   display: block;
   -webkit-transition: all .4s ease;
   -o-transition: all .4s ease;
