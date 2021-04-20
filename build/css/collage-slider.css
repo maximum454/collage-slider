@@ -1691,7 +1691,7 @@ body.compensate-for-scrollbar {
 .collage__img {
   position: relative;
   cursor: pointer;
-  margin-left: -20px;
+  margin-left: -36px;
   -webkit-box-shadow: 0 0 4px 2px rgba(74, 74, 74, 0.6);
           box-shadow: 0 0 4px 2px rgba(74, 74, 74, 0.6);
   display: block;
@@ -1701,6 +1701,8 @@ body.compensate-for-scrollbar {
   -webkit-transform: scale(1);
       -ms-transform: scale(1);
           transform: scale(1);
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 
 .collage__img:hover {
@@ -1749,8 +1751,8 @@ body.compensate-for-scrollbar {
 .collage .slick-prev {
   position: absolute;
   display: block;
-  width: 25px;
-  height: 45px;
+  width: 27px;
+  height: 48px;
   background-image: url("../img/arrow-right.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -1768,16 +1770,21 @@ body.compensate-for-scrollbar {
 }
 
 .collage .slick-prev {
-  left: 0;
+  left: -10px;
+  top: 40px;
   -webkit-transform: translate(0, 0) rotate(180deg);
       -ms-transform: translate(0, 0) rotate(180deg);
           transform: translate(0, 0) rotate(180deg);
 }
 
 .collage .slick-next {
-  right: 0;
+  right: -10px;
   top: auto;
-  bottom: 0;
+  bottom: 40px;
+}
+
+.collage .slick-disabled {
+  visibility: hidden;
 }
 
 @media all and (max-width: 576px) {
