@@ -13,7 +13,7 @@
 	&__img{
 		position: relative;
 		cursor: pointer;
-		box-shadow: 0 0 4px 2px rgba(#4a4a4a,.6);
+		box-shadow: 0 0 15px 4px rgba(#999,.6);
 		display: block;
 		transition: all .4s ease;
 		transform: scale(1);
@@ -57,7 +57,7 @@
 	.swiper-button-prev:after {
 		width: 27px;
 		height: 48px;
-		color: #4a4a4a;
+		color: #999;
 	}
 	@include r(1023){
 		.swiper-slide{
