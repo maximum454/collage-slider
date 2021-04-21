@@ -1,9 +1,6 @@
-@@include('./partials/jquery.min.js')
 @@include('./partials/swiper-bundle.min.js')
-@@include('./partials/jquery.fancybox.min.js')
 
 $(function () {
-
     const swiper = new Swiper('.swiper-container', {
         slidesPerView: 'auto',
         freeMode: true,
