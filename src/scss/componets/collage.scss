@@ -66,8 +66,15 @@
 		&__img{
 			width: 215px;
 		}
-	}
-	@include r(767){
-
+		.swiper-button-prev{
+			left: 0;
+			top: 50%;
+		}
+		.swiper-button-next {
+			right: 0;
+			top: auto;
+			bottom: 50%;
+			transform: translate(0,50%);
+		}
 	}
 }
