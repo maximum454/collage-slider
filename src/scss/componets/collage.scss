@@ -13,7 +13,6 @@
 	&__img{
 		position: relative;
 		cursor: pointer;
-		box-shadow: 0 0 4px 2px rgba(#999,.6);
 		display: block;
 		transition: all .4s ease;
 		transform: scale(1);
@@ -34,6 +33,10 @@
 
 		}
 	}
+	&__slider{
+
+	}
+
 	.swiper-container{
 		padding: 20px 0;
 	}
@@ -63,5 +66,8 @@
 		&__img{
 			width: 215px;
 		}
+	}
+	@include r(767){
+
 	}
 }
